@@ -1,0 +1,73 @@
+{
+  "object": "data_source",
+  "id": "ds-1",
+  "title": [
+    {
+      "type": "text",
+      "text": { "content": "Tasks", "link": null },
+      "annotations": { "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false, "color": "default" },
+      "plain_text": "Tasks",
+      "href": null
+    }
+  ],
+  "description": [],
+  "parent": { "type": "database_id", "database_id": "db-1" },
+  "database_parent": { "type": "page_id", "page_id": "page-1" },
+  "is_inline": false,
+  "in_trash": false,
+  "created_time": "2026-08-01T09:00:00.000Z",
+  "last_edited_time": "2026-09-02T14:15:00.000Z",
+  "created_by": { "object": "user", "id": "u1" },
+  "last_edited_by": { "object": "user", "id": "u1" },
+  "url": "https://www.notion.so/ds1",
+  "public_url": null,
+  "icon": null,
+  "cover": null,
+  "properties": {
+    "Name": { "id": "title", "name": "Name", "description": null, "type": "title", "title": {} },
+    "Priority": {
+      "id": "n1", "name": "Priority", "description": null,
+      "type": "number", "number": { "format": "number" }
+    },
+    "Status": {
+      "id": "s1", "name": "Status", "description": null, "type": "status",
+      "status": {
+        "options": [
+          { "id": "o1", "name": "To do", "color": "gray", "description": null },
+          { "id": "o2", "name": "In progress", "color": "blue", "description": null },
+          { "id": "o3", "name": "Done", "color": "green", "description": null }
+        ],
+        "groups": [
+          { "id": "g1", "name": "To-do", "color": "gray", "option_ids": ["o1"] },
+          { "id": "g2", "name": "In progress", "color": "blue", "option_ids": ["o2"] },
+          { "id": "g3", "name": "Complete", "color": "green", "option_ids": ["o3"] }
+        ]
+      }
+    },
+    "Tags": {
+      "id": "ms1", "name": "Tags", "description": null, "type": "multi_select",
+      "multi_select": { "options": [{ "id": "t1", "name": "go", "color": "green", "description": null }] }
+    },
+    "Blocked by": {
+      "id": "r1", "name": "Blocked by", "description": null, "type": "relation",
+      "relation": {
+        "database_id": "db-1", "data_source_id": "ds-1",
+        "type": "dual_property",
+        "dual_property": { "synced_property_id": "r2", "synced_property_name": "Blocks" }
+      }
+    },
+    "Total": {
+      "id": "ro1", "name": "Total", "description": null, "type": "rollup",
+      "rollup": {
+        "function": "sum",
+        "relation_property_name": "Blocked by", "relation_property_id": "r1",
+        "rollup_property_name": "Priority", "rollup_property_id": "n1"
+      }
+    },
+    "Ticket": {
+      "id": "uid1", "name": "Ticket", "description": null,
+      "type": "unique_id", "unique_id": { "prefix": "TASK" }
+    },
+    "Created": { "id": "ct1", "name": "Created", "description": null, "type": "created_time", "created_time": {} }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "equation",
+  "equation": { "expression": "e^{i\\pi} + 1 = 0" },
+  "annotations": {
+    "bold": false,
+    "italic": false,
+    "strikethrough": false,
+    "underline": false,
+    "code": false,
+    "color": "default"
+  },
+  "plain_text": "e^{i\\pi} + 1 = 0",
+  "href": null
+}

@@ -1,0 +1,6 @@
+# Test binaries and coverage output
+*.test
+*.out
+
+# Local integration test credentials (see .env.example)
+.env

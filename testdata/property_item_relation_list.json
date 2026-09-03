@@ -1,0 +1,16 @@
+{
+  "object": "list",
+  "results": [
+    { "object": "property_item", "id": "r1", "type": "relation", "relation": { "id": "p-1" } },
+    { "object": "property_item", "id": "r1", "type": "relation", "relation": { "id": "p-2" } }
+  ],
+  "next_cursor": "cursor-2",
+  "has_more": true,
+  "type": "property_item",
+  "property_item": {
+    "id": "r1",
+    "next_url": "https://api.notion.com/v1/pages/p1/properties/r1?start_cursor=cursor-2&page_size=25",
+    "type": "relation",
+    "relation": {}
+  }
+}

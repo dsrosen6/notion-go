@@ -1,0 +1,17 @@
+{
+  "type": "mention",
+  "mention": {
+    "type": "date",
+    "date": { "start": "2026-09-03", "end": null, "time_zone": null }
+  },
+  "annotations": {
+    "bold": false,
+    "italic": false,
+    "strikethrough": false,
+    "underline": false,
+    "code": false,
+    "color": "default"
+  },
+  "plain_text": "2026-09-03",
+  "href": null
+}

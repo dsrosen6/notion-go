@@ -1,0 +1,14 @@
+{
+  "type": "text",
+  "text": { "content": "Hello ", "link": null },
+  "annotations": {
+    "bold": true,
+    "italic": false,
+    "strikethrough": false,
+    "underline": false,
+    "code": false,
+    "color": "default"
+  },
+  "plain_text": "Hello ",
+  "href": null
+}

@@ -1,0 +1,59 @@
+{
+  "object": "page",
+  "id": "22222222-1111-2222-3333-444444444444",
+  "created_time": "2026-08-01T09:00:00.000Z",
+  "last_edited_time": "2026-09-02T14:15:00.000Z",
+  "created_by": { "object": "user", "id": "cccccccc-1111-2222-3333-444444444444" },
+  "last_edited_by": { "object": "user", "id": "cccccccc-1111-2222-3333-444444444444" },
+  "in_trash": false,
+  "is_archived": false,
+  "is_locked": false,
+  "url": "https://www.notion.so/Ship-the-SDK-2222222211112222",
+  "public_url": null,
+  "parent": { "type": "data_source_id", "data_source_id": "ds-1", "database_id": "db-1" },
+  "icon": { "type": "emoji", "emoji": "🚀" },
+  "cover": null,
+  "properties": {
+    "Name": {
+      "id": "title",
+      "type": "title",
+      "title": [
+        {
+          "type": "text",
+          "text": { "content": "Ship the SDK", "link": null },
+          "annotations": { "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false, "color": "default" },
+          "plain_text": "Ship the SDK",
+          "href": null
+        }
+      ]
+    },
+    "Status": {
+      "id": "abc1",
+      "type": "status",
+      "status": { "id": "s1", "name": "In progress", "color": "blue" }
+    },
+    "Priority": { "id": "n1", "type": "number", "number": 3 },
+    "Done": { "id": "chk1", "type": "checkbox", "checkbox": false },
+    "Due": {
+      "id": "d1",
+      "type": "date",
+      "date": { "start": "2026-09-15", "end": null, "time_zone": null }
+    },
+    "Tags": {
+      "id": "ms1",
+      "type": "multi_select",
+      "multi_select": [
+        { "id": "t1", "name": "go", "color": "green" },
+        { "id": "t2", "name": "sdk", "color": "purple" }
+      ]
+    },
+    "Empty": { "id": "n2", "type": "number", "number": null },
+    "Owner": {
+      "id": "p1",
+      "type": "people",
+      "people": [{ "object": "user", "id": "u1", "name": "Ada", "type": "person", "person": {} }]
+    },
+    "Created": { "id": "ct1", "type": "created_time", "created_time": "2026-08-01T09:00:00.000Z" },
+    "Ticket": { "id": "uid1", "type": "unique_id", "unique_id": { "prefix": "TASK", "number": 42 } }
+  }
+}
